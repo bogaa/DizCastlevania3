@@ -3110,8 +3110,17 @@
                        db $FF,$FF                           ;0FDFFE|        |CA9EFF;  
                                                             ;      |        |      ;  
               bank_9e: db $9E                               ;0FE000|        |      ; NES PRG 3e000
-                       db $CA,$D0,$FD,$60,$A2,$0F,$CA,$D0   ;0FE001|        |      ;  
-                       db $FD,$60                           ;0FE009|        |0FD860;  
+                                                            ;      |        |      ;  
+         wait50cycles: DEX                                  ;0FE001|CA      |      ;  
+                       BNE wait50cycles                     ;0FE002|D0FD    |0FE001;  
+                       RTS                                  ;0FE004|60      |      ;  
+                                                            ;      |        |      ;  
+                       LDX.B #$0F                           ;0FE005|A20F    |      ;  
+                                                            ;      |        |      ;  
+          CODE_0FE007: DEX                                  ;0FE007|CA      |      ;  
+                       BNE CODE_0FE007                      ;0FE008|D0FD    |0FE007;  
+                       RTS                                  ;0FE00A|60      |      ;  
+                                                            ;      |        |      ;  
                                                             ;      |        |      ;  
           resetVector: CLD                                  ;0FE00B|D8      |      ;  
                        SEI                                  ;0FE00C|78      |      ;  

@@ -3,7 +3,8 @@
                                                             ;      |        |      ;  
                                                             ;      |        |      ;  
               bank_9a: db $9A                               ;0D8000|        |      ; PRG 34000
-                       LDA.B wGameState                     ;0D8001|A518    |000025;  
+                                                            ;      |        |      ;  
+        mainSpriteOAM: LDA.B wGameState                     ;0D8001|A518    |000025;  
                        CMP.B #$0C                           ;0D8003|C90C    |      ;  
                        BNE CODE_0D800A                      ;0D8005|D003    |0D800A;  
                        JMP.W CODE_0D8188                    ;0D8007|4C8881  |0D8188;  

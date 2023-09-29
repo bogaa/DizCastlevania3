@@ -295,6 +295,9 @@
                        ;      |        |      ;  
                        ;      |        |      ;  
                        compressScreenTilemapPointerHi = $0FEC78;      |        |      ;  
+                       ;      |        |      ;  
+                       irq_dataHi = $019F32                 ;      |        |      ;  
+                       gearCHRanimPointerHi = $019FBE       ;      |        |      ;  
                        PTR16_008067 = $008067               ;      |        |      ;  
                        PTR16_00843E = $00843E               ;      |        |      ;  
                        PTR16_008494 = $008494               ;      |        |      ;  

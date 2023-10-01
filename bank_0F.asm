@@ -3150,12 +3150,12 @@
                        JSR.W initDispRegs                   ;0FE043|2072E1  |0FE172;  
                        CLI                                  ;0FE046|58      |      ;  
                                                             ;      |        |      ;  
-        endReset Loop: INC.B wRandomVal                     ;0FE047|E61F    |00001F;  
+         endResetLoop: INC.B wRandomVal                     ;0FE047|E61F    |00001F;  
                        CLC                                  ;0FE049|18      |      ;  
                        LDA.B wRandomVal                     ;0FE04A|A51F    |00001F;  
                        ADC.B wGameStateLoopCounter          ;0FE04C|651A    |00001A;  
                        STA.B wRandomVal                     ;0FE04E|851F    |00001F;  
-                       JMP.W endReset Loop                  ;0FE050|4C47E0  |0FE047;  
+                       JMP.W endResetLoop                   ;0FE050|4C47E0  |0FE047;  
                                                             ;      |        |      ;  
                                                             ;      |        |      ;  
        NMIVectorStart: PHA                                  ;0FE053|48      |      ;  

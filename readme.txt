@@ -128,8 +128,9 @@ here are notes how I distributed the NES banks to the SNES rom for the offsets t
 								"code/bank19.s"
 	
 	;bank 1a	= BANK 0d 	DizBase $d8000 NESoffset $34000		d 
-								"code/updateEntityOam.s"
-								"data/oamSpecData_1a.s"
+								
+								!spriteAssemblyData/Pointer $823e
+								
 	
 	
 	;bank 1b	= BANK 0d 	DizBase $d8000 NESoffset $36000		d 
@@ -148,5 +149,7 @@ here are notes how I distributed the NES banks to the SNES rom for the offsets t
 	
 	
 	;bank 1f	= BANK 0f 	DizBase $fe000 NESoffset $3e000		f 
+								
+								!spriteAnim $efb4
 								code/bank1f.s
 	

@@ -292,10 +292,7 @@
                        fishManSpawnPointer_12 = $0A86BF     ;      |        |      ;  
                        ghostSpawnerPointer_18 = $0A8AAD     ;      |        |      ;  
                        gameStateC_substate00 = $0AB11C      ;      |        |      ;  
-                       ;      |        |      ;  
-                       ;      |        |      ;  
                        compressScreenTilemapPointerHi = $0FEC78;      |        |      ;  
-                       ;      |        |      ;  
                        irq_dataHi = $019F32                 ;      |        |      ;  
                        gearCHRanimPointerHi = $019FBE       ;      |        |      ;  
                        PTR16_008067 = $008067               ;      |        |      ;  

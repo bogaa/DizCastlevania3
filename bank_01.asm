@@ -2336,7 +2336,7 @@ symphaScreenUpdateStatue: STX.B wCoreLoadingFuncAddr           ;019D93|8616    |
                                                             ;      |        |      ;  
    generalLoadTable07: JSR.W UNREACH_01AD34                 ;01A8F9|2034AD  |01AD34;  
                        JSR.W UNREACH_01A790                 ;01A8FC|2090A7  |01A790;  
-                       BCC $19                              ;01A8FF|9019    |01A91A;  
+                       BCC CODE_01A91A                      ;01A8FF|9019    |01A91A;  
                        JSR.W UNREACH_01A794                 ;01A901|2094A7  |01A794;  
                        LDA.B #$21                           ;01A904|A921    |      ;  
                        STA.B wBaseIRQFuncIdx                ;01A906|853F    |00003F;  
@@ -2348,7 +2348,8 @@ symphaScreenUpdateStatue: STX.B wCoreLoadingFuncAddr           ;019D93|8616    |
                        STA.W $07EE                          ;01A914|8DEE07  |0107EE;  
                        JMP.W endGenerelLoad                 ;01A917|4C9BA8  |01A89B;  
                                                             ;      |        |      ;  
-                       RTS                                  ;01A91A|60      |      ;  
+                                                            ;      |        |      ;  
+          CODE_01A91A: RTS                                  ;01A91A|60      |      ;  
                                                             ;      |        |      ;  
                                                             ;      |        |      ;  
    generalLoadTable08: JSR.W UNREACH_01AD34                 ;01A91B|2034AD  |01AD34;  
